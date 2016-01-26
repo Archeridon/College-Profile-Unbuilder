@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3FA392A01C57EB3300808542 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA3929F1C57EB3300808542 /* AppDelegate.swift */; };
+		3FA392A21C57EB3300808542 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA392A11C57EB3300808542 /* ViewController.swift */; };
+		3FA392A51C57EB3300808542 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FA392A31C57EB3300808542 /* Main.storyboard */; };
+		3FA392A71C57EB3300808542 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FA392A61C57EB3300808542 /* Assets.xcassets */; };
+		3FA392AA1C57EB3300808542 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FA392A81C57EB3300808542 /* LaunchScreen.storyboard */; };
+		3FA392B51C57EB3300808542 /* Redo__Collage_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA392B41C57EB3300808542 /* Redo__Collage_AppTests.swift */; };
+		3FA392C01C57EB3300808542 /* Redo__Collage_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA392BF1C57EB3300808542 /* Redo__Collage_AppUITests.swift */; };
+		3FA392CE1C57EBD300808542 /* Colleges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA392CD1C57EBD300808542 /* Colleges.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3FA392B11C57EB3300808542 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FA392941C57EB3200808542 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FA3929B1C57EB3200808542;
+			remoteInfo = "Redo- Collage App";
+		};
+		3FA392BC1C57EB3300808542 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FA392941C57EB3200808542 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FA3929B1C57EB3200808542;
+			remoteInfo = "Redo- Collage App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3FA3929C1C57EB3200808542 /* Redo- Collage App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Redo- Collage App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FA3929F1C57EB3300808542 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3FA392A11C57EB3300808542 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3FA392A41C57EB3300808542 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3FA392A61C57EB3300808542 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3FA392A91C57EB3300808542 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3FA392AB1C57EB3300808542 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FA392B01C57EB3300808542 /* Redo- Collage AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Redo- Collage AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FA392B41C57EB3300808542 /* Redo__Collage_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Redo__Collage_AppTests.swift; sourceTree = "<group>"; };
+		3FA392B61C57EB3300808542 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FA392BB1C57EB3300808542 /* Redo- Collage AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Redo- Collage AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FA392BF1C57EB3300808542 /* Redo__Collage_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Redo__Collage_AppUITests.swift; sourceTree = "<group>"; };
+		3FA392C11C57EB3300808542 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FA392CD1C57EBD300808542 /* Colleges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colleges.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3FA392991C57EB3200808542 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FA392AD1C57EB3300808542 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FA392B81C57EB3300808542 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3FA392931C57EB3200808542 = {
+			isa = PBXGroup;
+			children = (
+				3FA3929E1C57EB3200808542 /* Redo- Collage App */,
+				3FA392B31C57EB3300808542 /* Redo- Collage AppTests */,
+				3FA392BE1C57EB3300808542 /* Redo- Collage AppUITests */,
+				3FA3929D1C57EB3200808542 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3FA3929D1C57EB3200808542 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FA3929C1C57EB3200808542 /* Redo- Collage App.app */,
+				3FA392B01C57EB3300808542 /* Redo- Collage AppTests.xctest */,
+				3FA392BB1C57EB3300808542 /* Redo- Collage AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3FA3929E1C57EB3200808542 /* Redo- Collage App */ = {
+			isa = PBXGroup;
+			children = (
+				3FA3929F1C57EB3300808542 /* AppDelegate.swift */,
+				3FA392A11C57EB3300808542 /* ViewController.swift */,
+				3FA392A31C57EB3300808542 /* Main.storyboard */,
+				3FA392CD1C57EBD300808542 /* Colleges.swift */,
+				3FA392A61C57EB3300808542 /* Assets.xcassets */,
+				3FA392A81C57EB3300808542 /* LaunchScreen.storyboard */,
+				3FA392AB1C57EB3300808542 /* Info.plist */,
+			);
+			path = "Redo- Collage App";
+			sourceTree = "<group>";
+		};
+		3FA392B31C57EB3300808542 /* Redo- Collage AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				3FA392B41C57EB3300808542 /* Redo__Collage_AppTests.swift */,
+				3FA392B61C57EB3300808542 /* Info.plist */,
+			);
+			path = "Redo- Collage AppTests";
+			sourceTree = "<group>";
+		};
+		3FA392BE1C57EB3300808542 /* Redo- Collage AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3FA392BF1C57EB3300808542 /* Redo__Collage_AppUITests.swift */,
+				3FA392C11C57EB3300808542 /* Info.plist */,
+			);
+			path = "Redo- Collage AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3FA3929B1C57EB3200808542 /* Redo- Collage App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FA392C41C57EB3300808542 /* Build configuration list for PBXNativeTarget "Redo- Collage App" */;
+			buildPhases = (
+				3FA392981C57EB3200808542 /* Sources */,
+				3FA392991C57EB3200808542 /* Frameworks */,
+				3FA3929A1C57EB3200808542 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Redo- Collage App";
+			productName = "Redo- Collage App";
+			productReference = 3FA3929C1C57EB3200808542 /* Redo- Collage App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3FA392AF1C57EB3300808542 /* Redo- Collage AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FA392C71C57EB3300808542 /* Build configuration list for PBXNativeTarget "Redo- Collage AppTests" */;
+			buildPhases = (
+				3FA392AC1C57EB3300808542 /* Sources */,
+				3FA392AD1C57EB3300808542 /* Frameworks */,
+				3FA392AE1C57EB3300808542 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FA392B21C57EB3300808542 /* PBXTargetDependency */,
+			);
+			name = "Redo- Collage AppTests";
+			productName = "Redo- Collage AppTests";
+			productReference = 3FA392B01C57EB3300808542 /* Redo- Collage AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3FA392BA1C57EB3300808542 /* Redo- Collage AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FA392CA1C57EB3300808542 /* Build configuration list for PBXNativeTarget "Redo- Collage AppUITests" */;
+			buildPhases = (
+				3FA392B71C57EB3300808542 /* Sources */,
+				3FA392B81C57EB3300808542 /* Frameworks */,
+				3FA392B91C57EB3300808542 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FA392BD1C57EB3300808542 /* PBXTargetDependency */,
+			);
+			name = "Redo- Collage AppUITests";
+			productName = "Redo- Collage AppUITests";
+			productReference = 3FA392BB1C57EB3300808542 /* Redo- Collage AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3FA392941C57EB3200808542 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Archeridon;
+				TargetAttributes = {
+					3FA3929B1C57EB3200808542 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 855KHN62UW;
+					};
+					3FA392AF1C57EB3300808542 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 855KHN62UW;
+						TestTargetID = 3FA3929B1C57EB3200808542;
+					};
+					3FA392BA1C57EB3300808542 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 855KHN62UW;
+						TestTargetID = 3FA3929B1C57EB3200808542;
+					};
+				};
+			};
+			buildConfigurationList = 3FA392971C57EB3200808542 /* Build configuration list for PBXProject "Redo- Collage App" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3FA392931C57EB3200808542;
+			productRefGroup = 3FA3929D1C57EB3200808542 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3FA3929B1C57EB3200808542 /* Redo- Collage App */,
+				3FA392AF1C57EB3300808542 /* Redo- Collage AppTests */,
+				3FA392BA1C57EB3300808542 /* Redo- Collage AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3FA3929A1C57EB3200808542 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FA392AA1C57EB3300808542 /* LaunchScreen.storyboard in Resources */,
+				3FA392A71C57EB3300808542 /* Assets.xcassets in Resources */,
+				3FA392A51C57EB3300808542 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FA392AE1C57EB3300808542 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FA392B91C57EB3300808542 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3FA392981C57EB3200808542 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FA392A21C57EB3300808542 /* ViewController.swift in Sources */,
+				3FA392CE1C57EBD300808542 /* Colleges.swift in Sources */,
+				3FA392A01C57EB3300808542 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FA392AC1C57EB3300808542 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FA392B51C57EB3300808542 /* Redo__Collage_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FA392B71C57EB3300808542 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FA392C01C57EB3300808542 /* Redo__Collage_AppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3FA392B21C57EB3300808542 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FA3929B1C57EB3200808542 /* Redo- Collage App */;
+			targetProxy = 3FA392B11C57EB3300808542 /* PBXContainerItemProxy */;
+		};
+		3FA392BD1C57EB3300808542 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FA3929B1C57EB3200808542 /* Redo- Collage App */;
+			targetProxy = 3FA392BC1C57EB3300808542 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3FA392A31C57EB3300808542 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FA392A41C57EB3300808542 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3FA392A81C57EB3300808542 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FA392A91C57EB3300808542 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3FA392C21C57EB3300808542 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3FA392C31C57EB3300808542 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3FA392C51C57EB3300808542 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Redo- Collage App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Archeridon-Corperations.Redo--Collage-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3FA392C61C57EB3300808542 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Redo- Collage App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Archeridon-Corperations.Redo--Collage-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3FA392C81C57EB3300808542 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Redo- Collage AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Archeridon-Corperations.Redo--Collage-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Redo- Collage App.app/Redo- Collage App";
+			};
+			name = Debug;
+		};
+		3FA392C91C57EB3300808542 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Redo- Collage AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Archeridon-Corperations.Redo--Collage-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Redo- Collage App.app/Redo- Collage App";
+			};
+			name = Release;
+		};
+		3FA392CB1C57EB3300808542 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Redo- Collage AppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Archeridon-Corperations.Redo--Collage-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Redo- Collage App";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		3FA392CC1C57EB3300808542 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Redo- Collage AppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Archeridon-Corperations.Redo--Collage-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Redo- Collage App";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3FA392971C57EB3200808542 /* Build configuration list for PBXProject "Redo- Collage App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FA392C21C57EB3300808542 /* Debug */,
+				3FA392C31C57EB3300808542 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FA392C41C57EB3300808542 /* Build configuration list for PBXNativeTarget "Redo- Collage App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FA392C51C57EB3300808542 /* Debug */,
+				3FA392C61C57EB3300808542 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3FA392C71C57EB3300808542 /* Build configuration list for PBXNativeTarget "Redo- Collage AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FA392C81C57EB3300808542 /* Debug */,
+				3FA392C91C57EB3300808542 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3FA392CA1C57EB3300808542 /* Build configuration list for PBXNativeTarget "Redo- Collage AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FA392CB1C57EB3300808542 /* Debug */,
+				3FA392CC1C57EB3300808542 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3FA392941C57EB3200808542 /* Project object */;
+}
