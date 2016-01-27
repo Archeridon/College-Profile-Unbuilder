@@ -14,13 +14,19 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var add: UIBarButtonItem!
     
+    var college : [Colleges] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        add.tag = 0
       
         
     }
+    
 
+    @IBAction func onTap(sender: UIBarButtonItem) {
+        
+    }
 
 
 }
