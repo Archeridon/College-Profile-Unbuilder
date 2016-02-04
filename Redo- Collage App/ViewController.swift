@@ -8,38 +8,62 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ViewController: UIViewController,UITableViewDataSource , UITableViewDelegate {
     
     @IBOutlet weak var tableView: UITableView!
     
-    @IBOutlet weak var add: UIBarButtonItem!
+    
     
     var college : [Colleges] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        add.tag = 0
+        
+        
         college.append(Colleges(name: "Harper College", state: "Illinois", students: 8000, image: UIImage(named: "harper")!))
         
     }
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return college.count
     }
+    //----------------
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("MyCell", forIndexPath: indexPath)
         cell.textLabel?.text = college[indexPath.row].name
         return cell
     }
+    //----------------
     func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete
         {
-            college.removeAtIndex(indexPath)
+            college.removeAtIndex(indexPath.row)
+            tableView.reloadData()
         }
     }
-    
-
+    //----------------
+    func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        return true
+    }
+    //----------------
+    func tableView(tableView: UITableView, moveRowAtIndexPath sourceIndexPath: NSIndexPath, toIndexPath destinationIndexPath: NSIndexPath) {
+        let collage = college[sourceIndexPath.row]
+        college.removeAtIndex(sourceIndexPath.row)
+        college.insert(collage, atIndex: destinationIndexPath.row)
+    }
+    //----------------
     @IBAction func onTap(sender: UIBarButtonItem) {
-        
+
+        if sender.tag == 0 {
+            tableView.editing = true
+            sender.tag = 1
+        }
+        else
+        {
+            tableView.editing = false
+            sender.tag = 0
+        }
+
     }
 
 
