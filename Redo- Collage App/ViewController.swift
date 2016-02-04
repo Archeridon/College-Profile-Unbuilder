@@ -8,17 +8,18 @@
 
 import UIKit
 
-class ViewController: UIViewController,UITableViewDataSource , UITableViewDelegate {
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate
+{
     
     @IBOutlet weak var tableView: UITableView!
-    
-    
+    @IBOutlet weak var editButton: UIBarButtonItem!
     
     var college : [Colleges] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        editButton.tag = 0
         
         college.append(Colleges(name: "Harper College", state: "Illinois", students: 8000, image: UIImage(named: "harper")!))
         
@@ -44,13 +45,15 @@ class ViewController: UIViewController,UITableViewDataSource , UITableViewDelega
     //----------------
     func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
         return true
+    
     }
     //----------------
     func tableView(tableView: UITableView, moveRowAtIndexPath sourceIndexPath: NSIndexPath, toIndexPath destinationIndexPath: NSIndexPath) {
-        let collage = college[sourceIndexPath.row]
+        let whatItis = college[sourceIndexPath.row]
         college.removeAtIndex(sourceIndexPath.row)
-        college.insert(collage, atIndex: destinationIndexPath.row)
+        college.insert(whatItis, atIndex: destinationIndexPath.row)
     }
+    
     //----------------
     @IBAction func onTap(sender: UIBarButtonItem) {
 
@@ -66,6 +69,18 @@ class ViewController: UIViewController,UITableViewDataSource , UITableViewDelega
 
     }
 
+    @IBAction func onTapAdd(sender: UIBarButtonItem) {
+        let alert = UIAlertController(title: "ADD", message: nil, preferredStyle: .Alert)
+        alert.addTextFieldWithConfigurationHandler { (textFeild) -> Void in
+            textFeild.placeholder = "Add it here!"
+            let cancelAction = UIAlertAction(title: "Cancel?", style: .Cancel, handler: nil)
+            let addAction = UIAlertAction(title: "Add", style: .Default, handler: { (action) -> Void in
+                let collegeTextFeild = alert.textFields![0] as UITextField
+                self.college.append(Colleges(name: collegeTextFeild.text!))
+                self.tableView.reloadData()
+            })
+        }
+    }
 
 }
 

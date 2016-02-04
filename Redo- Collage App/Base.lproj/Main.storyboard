@@ -21,7 +21,7 @@
                                 <rect key="frame" x="180" y="64" width="240" height="528"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="MyCell" selectionStyle="default" indentationWidth="10" id="tlE-QV-4d6">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="MyCell" selectionStyle="default" indentationWidth="10" id="tlE-QV-4d6" userLabel="MyCell">
                                         <rect key="frame" x="0.0" y="92" width="240" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tlE-QV-4d6" id="VyE-W6-7vL">
@@ -53,7 +53,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="IAI-sj-cKJ">
-                        <barButtonItem key="leftBarButtonItem" systemItem="add" id="A2r-8J-f2W"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="add" id="A2r-8J-f2W">
+                            <connections>
+                                <action selector="onTapAdd:" destination="BYZ-38-t0r" id="sNL-V8-Uw0"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="edit" id="jJE-EK-kJu">
                             <connections>
                                 <action selector="onTap:" destination="BYZ-38-t0r" id="E0V-YG-XvM"/>
@@ -61,6 +65,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="editButton" destination="jJE-EK-kJu" id="3Vf-cN-hbH"/>
                         <outlet property="tableView" destination="5gd-OK-q2y" id="bMb-Oc-f7a"/>
                     </connections>
                 </viewController>
