@@ -68,19 +68,28 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         }
 
     }
-
-    @IBAction func onTapAdd(sender: UIBarButtonItem) {
-        let alert = UIAlertController(title: "ADD", message: nil, preferredStyle: .Alert)
-        alert.addTextFieldWithConfigurationHandler { (textFeild) -> Void in
-            textFeild.placeholder = "Add it here!"
-            let cancelAction = UIAlertAction(title: "Cancel?", style: .Cancel, handler: nil)
-            let addAction = UIAlertAction(title: "Add", style: .Default, handler: { (action) -> Void in
-                let collegeTextFeild = alert.textFields![0] as UITextField
-                self.college.append(Colleges(name: collegeTextFeild.text!))
-                self.tableView.reloadData()
-            })
-        }
-    }
-
+    
+    @IBAction func onAddTap(sender: AnyObject)
+                        {//1
+        let alert = UIAlertController(title: "Add", message: nil, preferredStyle: .Alert)
+                alert.addTextFieldWithConfigurationHandler
+                            { //2
+                    (textFeild) -> Void in
+                    textFeild.placeholder = "Kill me"
+                            } //2
+        let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
+                    alert.addAction(cancelAction)
+        let addAction = UIAlertAction(title: "Add", style: .Default) { (action) -> Void in
+            let cityTextFeild = alert.textFields![0] as UITextField
+            self.college.append(Colleges(name: cityTextFeild.text!))
+            self.tableView.reloadData()
+                            }
+            alert.addAction(addAction)
+            self.presentViewController(alert, animated: true, completion: nil)
+        
+        
+        
+                        } //1
+   
 }
 
