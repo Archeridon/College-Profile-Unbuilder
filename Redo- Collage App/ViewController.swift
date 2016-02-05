@@ -11,15 +11,15 @@ import UIKit
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate
 {
     
+    
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var editButton: UIBarButtonItem!
     
     var college : [Colleges] = []
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        editButton.tag = 0
+       
         
         college.append(Colleges(name: "Harper College", state: "Illinois", students: 8000, image: UIImage(named: "harper")!))
         
@@ -77,9 +77,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                     (textFeild) -> Void in
                     textFeild.placeholder = "Kill me"
                             } //2
-        let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
+        var cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
                     alert.addAction(cancelAction)
-        let addAction = UIAlertAction(title: "Add", style: .Default) { (action) -> Void in
+        var addAction = UIAlertAction(title: "Add", style: .Default) { (action) -> Void in
             let cityTextFeild = alert.textFields![0] as UITextField
             self.college.append(Colleges(name: cityTextFeild.text!))
             self.tableView.reloadData()

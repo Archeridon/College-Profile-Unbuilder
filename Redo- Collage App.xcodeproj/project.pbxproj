@@ -15,6 +15,7 @@
 		3FA392B51C57EB3300808542 /* Redo__Collage_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA392B41C57EB3300808542 /* Redo__Collage_AppTests.swift */; };
 		3FA392C01C57EB3300808542 /* Redo__Collage_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA392BF1C57EB3300808542 /* Redo__Collage_AppUITests.swift */; };
 		3FA392CE1C57EBD300808542 /* Colleges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA392CD1C57EBD300808542 /* Colleges.swift */; };
+		3FB910381C651B19000691D5 /* ASlightlyDetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB910371C651B19000691D5 /* ASlightlyDetailedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		3FA392BF1C57EB3300808542 /* Redo__Collage_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Redo__Collage_AppUITests.swift; sourceTree = "<group>"; };
 		3FA392C11C57EB3300808542 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FA392CD1C57EBD300808542 /* Colleges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colleges.swift; sourceTree = "<group>"; };
+		3FB910371C651B19000691D5 /* ASlightlyDetailedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASlightlyDetailedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				3FA3929F1C57EB3300808542 /* AppDelegate.swift */,
 				3FA392A11C57EB3300808542 /* ViewController.swift */,
 				3FA392A31C57EB3300808542 /* Main.storyboard */,
+				3FB910371C651B19000691D5 /* ASlightlyDetailedViewController.swift */,
 				3FA392CD1C57EBD300808542 /* Colleges.swift */,
 				3FA392A61C57EB3300808542 /* Assets.xcassets */,
 				3FA392A81C57EB3300808542 /* LaunchScreen.storyboard */,
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FB910381C651B19000691D5 /* ASlightlyDetailedViewController.swift in Sources */,
 				3FA392A21C57EB3300808542 /* ViewController.swift in Sources */,
 				3FA392CE1C57EBD300808542 /* Colleges.swift in Sources */,
 				3FA392A01C57EB3300808542 /* AppDelegate.swift in Sources */,
@@ -491,6 +495,7 @@
 				3FA392C61C57EB3300808542 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3FA392C71C57EB3300808542 /* Build configuration list for PBXNativeTarget "Redo- Collage AppTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +504,7 @@
 				3FA392C91C57EB3300808542 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3FA392CA1C57EB3300808542 /* Build configuration list for PBXNativeTarget "Redo- Collage AppUITests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +513,7 @@
 				3FA392CC1C57EB3300808542 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
