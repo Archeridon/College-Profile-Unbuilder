@@ -44,6 +44,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="stP-R0-uy5" kind="show" id="sSL-Ds-D8O"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -90,33 +93,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="College" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="acH-G6-A2S">
-                                <rect key="frame" x="245" y="49" width="97" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Students" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KNX-Pm-h56">
+                                <rect key="frame" x="240" y="194" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Students" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KNX-Pm-h56">
-                                <rect key="frame" x="245" y="114" width="97" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="State" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AUT-oJ-Ae3">
+                                <rect key="frame" x="240" y="245" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fzA-ye-5bL">
-                                <rect key="frame" x="175" y="277" width="251" height="150"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fzA-ye-5bL">
+                                <rect key="frame" x="168" y="381" width="251" height="150"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9PM-gX-OTH">
-                                <rect key="frame" x="270" y="226" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9PM-gX-OTH">
+                                <rect key="frame" x="265" y="307" width="46" height="30"/>
                                 <state key="normal" title="Save"/>
                                 <connections>
                                     <action selector="tapSavePlz:" destination="stP-R0-uy5" eventType="touchUpInside" id="NYY-r2-FE4"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="State" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AUT-oJ-Ae3">
-                                <rect key="frame" x="245" y="172" width="97" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="College" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="acH-G6-A2S">
+                                <rect key="frame" x="240" y="140" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9PM-gX-OTH" firstAttribute="centerX" secondItem="GDV-j7-F2k" secondAttribute="centerX" id="6th-W2-C6r"/>
+                            <constraint firstItem="fzA-ye-5bL" firstAttribute="centerX" secondItem="GDV-j7-F2k" secondAttribute="centerX" id="AU5-QV-Jdk"/>
+                            <constraint firstItem="acH-G6-A2S" firstAttribute="centerX" secondItem="GDV-j7-F2k" secondAttribute="centerX" id="FPa-Om-sxY"/>
+                            <constraint firstItem="AUT-oJ-Ae3" firstAttribute="centerX" secondItem="GDV-j7-F2k" secondAttribute="centerX" id="LuQ-uS-xM7"/>
+                            <constraint firstItem="KNX-Pm-h56" firstAttribute="centerX" secondItem="GDV-j7-F2k" secondAttribute="centerX" id="TNs-d8-lAD"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="collegeTF" destination="acH-G6-A2S" id="YI3-1x-UQi"/>
