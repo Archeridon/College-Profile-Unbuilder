@@ -34,7 +34,9 @@ class ASlightlyDetailedViewController: UIViewController {
 
   
     @IBAction func tapSavePlz(sender: AnyObject) {
-        
+        college.name = collegeTF.text!
+        college.state = stateTF.text!
+        college.students = Int(studentTF.text!)!
     }
     
 

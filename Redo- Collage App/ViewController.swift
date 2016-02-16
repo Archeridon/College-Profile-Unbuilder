@@ -96,5 +96,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         dvc.college = college[index!]
         
     }
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
+    }
 }
 
