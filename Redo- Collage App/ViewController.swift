@@ -22,6 +22,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
        
         
         college.append(Colleges(name: "Harper College", state: "Illinois", students: 8000, image: UIImage(named: "harper")!))
+        college.append(Colleges(name: "University Of Illini", state: "Illinois", students: 32000, image: UIImage(named: "ilini")!))
+        college.append(Colleges(name: "University Of Pheonix", state: "Arizona", students: 230000, image: UIImage(named: "ariz")!))
         
     }
     
